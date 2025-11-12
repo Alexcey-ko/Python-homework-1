@@ -2,6 +2,6 @@
 
 Выполнение домашнего задания №1. Настройка рабочей среды.
 
-## Установка Python
+## 1. Установка Python
 
-Скачивание по ссылке(https://www.python.org/downloads/windows/)
+Скачивание по ссылке https://www.python.org/downloads/windows/
