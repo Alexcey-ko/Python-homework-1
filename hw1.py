@@ -35,7 +35,7 @@ class CustomerDataClass:
 class OrderDataClass:
    """Класс для работы с заказом клиента."""
 
-   def __init__(self,order_id, amount):
+   def __init__(self, order_id, amount):
       """Конструктор класса.
 
       Args:
