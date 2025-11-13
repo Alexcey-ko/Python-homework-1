@@ -15,8 +15,8 @@
 
 Добавление переменных среды PATH.
 Поиск -> Переменные среды -> Path.
-![Переменные среды](./img/Переменные_среды.png)
-![Python PATH](./img/Python_PATH.png)
+![Переменные среды](./img/Переменные_среды.jpeg)
+![Python PATH](./img/Python_PATH.jpeg)
 
 ## 2. Установка Jupyter Lab
 
