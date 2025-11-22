@@ -1,0 +1,2 @@
+set PROJ_NAME=ИМЯ_ПРОЕКТА_НА_GITHUB
+set GITHUB_USER=ИМЯ_ПОЛЬЗОВАТЕЛЯ_НА_GITHUB

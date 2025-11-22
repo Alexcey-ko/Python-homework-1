@@ -303,10 +303,10 @@ git push -u origin main
 ```sh
 call env.cmd
 python -m pip install uv
-uv init %PROJ_NAME% --src-layout
+uv init %PROJ_NAME%
 cd %PROJ_NAME%
-copy ..\SampleFiles\.gitignore
-copy ..\SampleFiles\LICENSE
+uv venv
+.venv\Scripts\activate
 uv add --dev ruff
 uv lock
 git init
