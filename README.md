@@ -271,13 +271,7 @@ md src
 cd src
 md %PROJ_NAME%
 cd ..
-copy ..\SampleFiles\.gitignore
-copy ..\SampleFiles\LICENSE
-git init
-git add --all
-git commit -a -m "initial commit“
-git remote add origin https://github.com/%GITHUB_USER%/%PROJ_NAME%.git
-git push -u origin main
+call git_init.cmd
 ```
 
 ### 9.3 Создание проекта с Poetry
@@ -287,15 +281,9 @@ call env.cmd
 python -m pip install poetry
 poetry new --src %PROJ_NAME%
 cd %PROJ_NAME%
-copy ..\SampleFiles\.gitignore
-copy ..\SampleFiles\LICENSE
 poetry add --group dev ruff
 poetry lock
-git init
-git add --all
-git commit -a -m "initial commit“
-git remote add origin https://github.com/%GITHUB_USER%/%PROJ_NAME%.git
-git push -u origin main
+call git_init.cmd
 ```
 
 ### 9.4 Создание проекта с UV
@@ -309,21 +297,17 @@ uv venv
 .venv\Scripts\activate
 uv add --dev ruff
 uv lock
-git init
-git add --all
-git commit -m "initial commit"
-git branch -M main
-git remote add origin https://github.com/%GITHUB_USER%/%PROJ_NAME%.git
-git push -u origin main
+call git_init.cmd
 ```
 
 ### 9.5 Коммит и пуш на github
 
 ```sh
 call env.cmd
-cd %PROJ_NAME%
+git init
 git add --all
-git commit -a -m "Regular commit"
+git commit -a -m "initial commit"
+git remote add origin https://github.com/%GITHUB_USER%/%PROJ_NAME%.git
 git push -u origin main
 ```
 
